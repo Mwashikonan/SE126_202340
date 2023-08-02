@@ -1,13 +1,14 @@
 #Function def
 
-def DefaultArg (name, msg = "Hello!"):
+def DefaultArg (name, msg = "Hello!", num = 7):
+    
     print (name)
     print (msg)
-
-    return 7 #no value returned
+    print (num)
+    return 7 #value returned
 
 #Function called
 
-DefaultArg("Tanya") # No second argument
-
 DefaultArg("Tanya", "Yo!")# With second argument
+
+DefaultArg("Tanya") # No second argument
