@@ -1,10 +1,13 @@
 import time
 
+fin = "y"
+
 for x in range (6):
     print (x)
 
 for x in range (10):
-    print ("***Value of x = ***" + str(x) + "\r\n")
+    
+    print ("***Value of x = " + str(x) +"***" + "\r\n")
     print ("Repetition #:" + str(x) + "\r\n")
     print ("1. Render Graphics" + "\r\n")
     print ("2. Render Audio" + "\r\n")
@@ -14,4 +17,11 @@ for x in range (10):
     
     time.sleep(2)
     
-print ("---End of Game Loop---" + "\r\n") 
+    fin = input("Would you like to continue? [Y/N]")
+    
+    while fin != "Y" and fin != "y":
+        
+        print ("Thank You for playing\r\n")
+        print("----END OF GAME LOOP----")
+        
+        
